@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type = "text/css" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="tictactoe-container">
+            <p data-record class="record noselect">X 0-0-0 O</p>
+            <div class="grid-container noselect">
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+                <div data-spaces class="grid-item"><p></p></div>
+            </div>
+            <select data-select class="ai-select" onchange="updateDifficulty()">
+                <option value="easy">Easy</option>
+                <option value="medium" selected="selected">Medium</option>
+                <option value="unbeatable">Unbeatable</option>
+                <option value="friend">Play with a friend</option>
+            </select>
+        </div>
+        <script src="tictactoe.js" defer></script>
+    </body>
+</html>
